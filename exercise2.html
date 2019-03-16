@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="m.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script text="text/javascript" src="plan2.js"></script>
+  <title>My Calculator</title>
+</head>
+
+<body>
+  <center>
+    <div class="container">
+      <br>
+      <div class="header"> MY CALCULATOR </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <input type="text" id="Display" class="form-control form-control-lg text-right" readonly="readonly">
+              <div class="row">
+                <div class="col-12">
+                  <table class="table borderless">
+                    <tr>
+                      <td colspan="2"><input type="button" value="OFF" class="btn btn-danger btn-block"
+                          onclick="hilang()"></td>
+                      <td colspan="2"><input type="button" value="ON" class="btn btn-success btn-block"
+                          onclick="bersih()"></td>
+                    </tr>
+                    <tr>
+                      <td width="25%"><input type="button" value="7" class="btn btn-dark btn-block"
+                          onclick="tambah('7')"></td>
+                      <td width="25%"><input type="button" value="8" class="btn btn-dark btn-block"
+                          onclick="tambah('8')"></td>
+                      <td width="25%"><input type="button" value="9" class="btn btn-dark btn-block"
+                          onclick="tambah('9')"></td>
+                      <td width="25%"><input type="button" value="+" class="btn btn-success btn-block"
+                          onclick="operate('+')"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" value="4" class="btn btn-dark btn-block" onclick="tambah('4')"></td>
+                      <td><input type="button" value="5" class="btn btn-dark btn-block" onclick="tambah('5')"></td>
+                      <td><input type="button" value="6" class="btn btn-dark btn-block" onclick="tambah('6')"></td>
+                      <td><input type="button" value="-" class="btn btn-success btn-block" onclick="operate('-')"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" value="1" class="btn btn-dark btn-block" onclick="tambah('1')"></td>
+                      <td><input type="button" value="2" class="btn btn-dark btn-block" onclick="tambah('2')"></td>
+                      <td><input type="button" value="3" class="btn btn-dark btn-block" onclick="tambah('3')"></td>
+                      <td><input type="button" value="x" class="btn btn-success btn-block" onclick="operate('*')"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" value="0" class="btn btn-dark btn-block" onclick="tambah('0')"></td>
+                      <td><input type="button" value="." class="btn btn-secondary btn-block" onclick="tambahtitik()"></td>
+                      <td><input type="button" value="=" class="btn btn-secondary btn-block" onclick="hasil()"></td>
+                      <td><input type="button" value="/" class="btn btn-success btn-block" onclick="operate('/')"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"><input type="button" value="Clear" class="btn btn-danger btn-block"
+                          onclick="bersih()"></td>
+                      <td colspan="2"><input type="button" value="+/-" class="btn btn-info btn-block"
+                          onclick="plusminus()"></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+  <div class="card-footer text-white text-right">
+    <p>Created by: Andi Prayoga Pinem</p>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script text="text/javascript" src="plan1.js"></script>
+</body>
+
+</html>

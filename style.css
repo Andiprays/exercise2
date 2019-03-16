@@ -1,0 +1,20 @@
+body{
+    background-image:url('./bg3.jpg');
+}
+
+.borderless td, .borderless th{
+    border: none;
+}
+.card{
+    width: 18rem;
+    background-color: grey;
+    background-image: url('./bg1.jpg');
+}
+.header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+}
+.card-footer text-muted text-right{
+    color: white;
+}
